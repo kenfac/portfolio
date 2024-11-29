@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chargement...</title>
+    <style>
+        /* Style pour le conteneur de la barre de progression */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #020000;
+            font-family: Arial, sans-serif;
+        }
+
+        #loader-container {
+            text-align: center;
+        }
+
+        /* Animation de la barre de progression */
+        #progress-gif {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        #loading-text {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader-container">
+        <img id="progress-gif" src="images/s.gif" alt="Chargement...">
+        <p id="loading-text">Chargement en cours, veuillez patienter...</p>
+    </div>
+
+    <script>
+        // Délai avant redirection vers la page principale
+        setTimeout(() => {
+            window.location.href = "acc.html"; // Remplacez "accueil.html" par l'URL de votre page d'accueil
+        }, 3000); // 3000 millisecondes = 3 secondes
+    </script>
+</body>
+</html>

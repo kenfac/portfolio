@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio ">
+    <title>Portfolio Développeur</title>
+    
+    <!-- Importation de la police Dancing -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lien vers les icônes FontAwesome pour les icônes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div class="loader">
+    <div class="progress-bar"></div>
+</div>
+    
+</div> -->
+              
+    <!-- En-tête avec le logo et le menu de navigation -->
+    <header id="header">
+
+        <DIV><h1 class="logo" style="font-family: 'Dancing  '; color: aqua;">KENZAH</h1></DIV>
+        <div class="container">
+    
+            
+<nav>
+    <ul class="nav-links">
+        <li style="font-family: denke one;"><a href="about.html">À propos</a></li>
+        <li  style="font-family: denke one;"><a href="projects.html">Projets</a></li>
+        <li style="font-family: denke one;"><a href="contact.html">Contact</a></li>
+        
+    </ul>
+
+</nav>
+
+    </header>
+        <main>        
+<section class="section"><div class="container1" id="text_contenair"></div>
+    <SCRipt>
+        const phrase="BIENVENUE SUR MON PORTFOLIO";
+       
+        
+        const container=document.getElementById('text_contenair');
+        let index=0;
+        function aff(){
+if(index<phrase.length){
+container.innerHTML += phrase[index];
+index++;
+}
+
+else{
+setTimeout(()=>{
+container.innerHTML="";
+index=0;
+},1000);
+}
+
+        }
+        setInterval(aff, 150);
+    </SCRipt>
+    </div>
+    <div class="project">
+        <img src="images/m.jpg" alt="Projet 1">
+        
+    </div>
+<div>
+<p  style="color: black; font-size: 26px;;">Salut moi c'est KENZAH vous pouvez m'appeller </p>
+<h1>HERMINE</h1>
+</div>
+                                 
+</main>  
+<!-- Pied de page -->
+<footer style="background-color: rgb(8, 8, 8);">
+    <p style="color: rgb(255, 254, 254); font-family: denk one; text-align: center;">KENZAH; 2024 Mon site web. tous droits réservés§.</p>
+    
+
+</body>
+</html>

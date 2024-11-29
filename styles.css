@@ -1,0 +1,83 @@
+/* Importation de la police Dancing */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Réinitialisation de styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.6;
+    background-color: #02f7ff;
+    color: #f00b6a;
+}
+
+/* En-tête */
+
+header {
+    background: #070000;
+    color: #f4a261;
+    font-family: "MONOTON", serif;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+   
+    }
+    
+     .container {
+    display: flex;
+    
+    align-items: center;
+    }
+    .logo {
+    font-size: 1.5rem;
+    }
+    .nav-links {
+    list-style: none;
+    display: flex;
+    }
+    .nav-links li {
+    margin-left: 20px;
+    } 
+    .nav-links a {
+    color: rgb(223, 217, 217);
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+    .nav-links a:hover {
+    color: #f4a261;
+    }
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.project {
+    width: 30%;
+    text-align: center;
+    /* background-color: #7f4bd3; */
+    padding: 50px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,207 @@
+/* Importation de la police Dancing */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Réinitialisation de styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.6;
+    background-color: #02f7ff;
+    color: #f00b6a;
+}
+
+/* En-tête */
+header {
+    background: #070000;
+    color: #f4a261;
+    font-family: "MONOTON", serif;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+     .container {
+    display: flex;
+    
+    align-items: center;
+    }
+    .logo {
+    font-size: 1.5rem;
+    }
+    .nav-links {
+    list-style: none;
+    display: flex;
+    }
+    .nav-links li {
+    margin-left: 20px;
+    } 
+    .nav-links a {
+    color: rgb(223, 217, 217);
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+    .nav-links a:hover {
+    color: #f4a261;
+    }
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#about {
+    background-color:  #02f7ff;
+    animation: fadeIn 2s ease-out;
+}
+
+#projects {
+    background-color: #f0f0f0;
+    animation: slideIn 2s ease-out;
+}
+
+#contact {
+    background-color: #fff;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Projet */
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    
+
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #29ee0f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0af531;
+}
+
+
+.MOI-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #fdf9fc;
+    margin-bottom: 10px;
+    }
+    .about h2 {
+        margin-bottom: 10px 0;
+        }
+        P{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-size: 18px;
+line-height: 1.5;
+        }
+        .text_contenair{
+            font-size: 16PX;
+            font-weight: bolder;
+            color: blueviolet;
+            white-space:nowrap;
+            overflow: hidden;
+        }
+        .hidden{
+            visibility: hidden;
+        }
+        .progress-bar-inner{
+            height: 30px;
+            width: 0%;
+            background-color: #15c7fd;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+           
+
+
+        }
+        .loader{
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: #15c7fd;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            z-index: 999;
+        }
+        .progress-bar{
+         
+            width: 80%;
+            background-color: #e40c8a;
+            border-radius: 10px;
+            margin:20px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .content{
+            padding: 20px;
+        }
